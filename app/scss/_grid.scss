@@ -1,0 +1,43 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.valign-center {
+  display: flex;
+  align-items: center;
+}
+
+.halign-center {
+  display: flex;
+  justify-content: center;
+}
+
+.halign-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.halign-spbetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.clearfix::after {
+  content: ' ';
+  display: block;
+  height: 0;
+  clear: both;
+}

@@ -1,0 +1,22 @@
+// Colors
+$white: #fff;
+$black: #000;
+
+$primary-color: #0a94b9;
+$primary-lighter-color: #4bb7bb;
+$accent-color: #fdd90e;
+
+$text-color: $black;
+
+// Breakpoints
+$screen-xxl-min: 1770px;
+$screen-xl-min: 1200px;
+$screen-xl-max: ($screen-xxl-min - 1);
+$screen-lg-min: 980px;
+$screen-lg-max: ($screen-xl-min - 1);
+$screen-md-min: 768px;
+$screen-md-max: ($screen-lg-min - 1);
+$screen-sm-min: 480px;
+$screen-sm-max: ($screen-md-min - 1);
+$screen-xs-min: 320px;
+$screen-xs-max: ($screen-sm-min - 1);
