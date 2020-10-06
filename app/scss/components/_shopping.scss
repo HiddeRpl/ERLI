@@ -1,0 +1,44 @@
+.shopping {
+  &__header {
+    margin-top: 43px;
+  }
+
+  &__cards-image,
+  &__card-image {
+    width: 100%;
+    height: auto;
+  }
+
+  &__cards-image {
+    @include screen-sm-max {
+      display: none;
+    }
+  }
+
+  &__card-image {
+    display: none;
+    @include screen-sm-max {
+      display: block;
+    }
+  }
+
+  &__coins-abbr {
+    display: block;
+    font-size: 0.7em;
+    margin-top: 23px;
+  }
+
+  &__coins-wrapper {
+    display: flex;
+  }
+
+  &__coins-image {
+    align-self: baseline;
+    max-width: 387px;
+  }
+
+  &__coins-text {
+    max-width: 450px;
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,28 @@
+.header {
+  box-shadow: 1px 1px 25px -18px #000;
+  height: 75px;
+  @include screen-sm-max {
+    box-shadow: none;
+  }
+
+  &__logo {
+    max-height: 35px;
+    @include screen-sm-max {
+      display: none;
+    }
+  }
+
+  &__logo-small {
+    max-height: 70px;
+    display: none;
+    @include screen-sm-max {
+      display: block;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}

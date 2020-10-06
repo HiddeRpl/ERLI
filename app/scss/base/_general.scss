@@ -4,7 +4,8 @@
 
 html {
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-size: 25px;
+  font-weight: 300;
   scroll-behavior: smooth;
   @include screen-sm-max {
     font-size: 12px;
@@ -41,6 +42,27 @@ a:focus {
   outline: solid #f00 1px !important;
 }
 
-.accent {
-  color: $accent-color;
+.accent-underline {
+  background-image: linear-gradient(180deg, transparent 65%, $accent-color 0, $accent-color 90%, transparent 0);
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.section {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.primary-button {
+  padding: 10px 27px;
+  background-image: linear-gradient(90deg, $primary-lighter-color, $primary-color);
+  border: 0;
+  color: $white;
+  border-radius: 35px;
+  font-size: 15px;
 }

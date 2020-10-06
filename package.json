@@ -11,8 +11,7 @@
     "lint": "tslint -p ./tsconfig.json -t codeFrame",
     "prettier": "prettier \"./**/*.{ts,tsx,scss}\" --write",
     "fix:ts": "yarn lint --fix",
-    "fix": "yarn prettier && yarn fix:ts",
-    "deploy": "yarn run build:prod && gh-pages -d dist"
+    "fix": "yarn prettier && yarn fix:ts"
   },
   "dependencies": {},
   "devDependencies": {
@@ -26,7 +25,6 @@
     "cssnano": "^4.1.10",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^4.0.0",
-    "gh-pages": "^2.0.1",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "imagemin-webpack-plugin": "^2.3.0",
