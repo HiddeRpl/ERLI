@@ -4,12 +4,16 @@
 
 html {
   font-family: 'Roboto', sans-serif;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 300;
   scroll-behavior: smooth;
   @include screen-sm-max {
-    font-size: 12px;
+    font-size: 20px;
   }
+}
+
+body {
+  padding-bottom: 200px; //to delete
 }
 
 a,
@@ -56,6 +60,10 @@ a:focus {
   margin-right: auto;
   padding-left: 30px;
   padding-right: 30px;
+
+  &.is-wider {
+    max-width: 1200px;
+  }
 }
 
 .primary-button {

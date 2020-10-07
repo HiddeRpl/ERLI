@@ -3,6 +3,7 @@
   height: 75px;
   @include screen-sm-max {
     box-shadow: none;
+    height: 100px;
   }
 
   &__logo {

@@ -1,6 +1,10 @@
 .shopping {
   &__header {
     margin-top: 43px;
+
+    @include screen-sm-max {
+      margin-top: 0.67em;
+    }
   }
 
   &__cards-image,
@@ -30,15 +34,32 @@
 
   &__coins-wrapper {
     display: flex;
+
+    @include screen-sm-max {
+      flex-direction: column;
+    }
   }
 
   &__coins-image {
     align-self: baseline;
     max-width: 387px;
+
+    @include screen-sm-max {
+      max-width: initial;
+      width: 100%;
+      height: auto;
+      order: -1;
+    }
   }
 
   &__coins-text {
     max-width: 450px;
     margin-right: 10px;
+    margin-top: 0;
+    margin-left: 0;
+
+    @include screen-sm-max {
+      max-width: initial;
+    }
   }
 }
