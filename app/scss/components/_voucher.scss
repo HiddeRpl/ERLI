@@ -5,12 +5,23 @@
     display: flex;
     margin-top: 60px;
     margin-bottom: 60px;
+
+    @include screen-sm-max {
+      flex-direction: column;
+      border-top: none;
+    }
   }
 
   &__card-image {
     width: 60%;
     flex-basis: 60%;
     background: url('../images/voucher.jpg') center/cover no-repeat;
+
+    @include screen-sm-max {
+      width: 100%;
+      flex-basis: initial;
+      height: 400px;
+    }
   }
 
   &__card-text {
@@ -22,6 +33,12 @@
     width: 40%;
     flex-basis: 40%;
     padding: 30px 40px;
+
+    @include screen-sm-max {
+      width: 100%;
+      flex-basis: 100%;
+      border-bottom: 6px solid $accent-color;
+    }
   }
 
   &__card-header {

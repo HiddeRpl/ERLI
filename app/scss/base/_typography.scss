@@ -1,12 +1,20 @@
 .heading {
-  &__1 {
-    font-size: 1.9em;
+  &__1,
+  &__2,
+  &__3 {
     font-weight: 700;
+  }
+
+  &__1 {
+    font-size: 2.3em;
   }
 
   &__2 {
     font-size: 1.6em;
-    font-weight: 700;
+  }
+
+  &__3 {
+    font-size: 1.4em;
   }
 }
 

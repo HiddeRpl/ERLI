@@ -12,10 +12,6 @@ html {
   }
 }
 
-body {
-  padding-bottom: 200px; //to delete
-}
-
 a,
 button {
   outline: none;
@@ -64,6 +60,10 @@ a:focus {
   &.is-wider {
     max-width: 1200px;
   }
+
+  &.is-fluid {
+    max-width: initial;
+  }
 }
 
 .primary-button {
@@ -72,5 +72,5 @@ a:focus {
   border: 0;
   color: $white;
   border-radius: 35px;
-  font-size: 15px;
+  font-size: 17px;
 }

@@ -1,0 +1,51 @@
+.footer {
+  &__section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__contact-list {
+    list-style-type: none;
+    padding: 0;
+    font-weight: 500;
+  }
+
+  &__rules {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 8px 0 0;
+    line-height: 26px;
+  }
+
+  &__right-col {
+    text-align: right;
+  }
+
+  &__contact-link {
+    color: $primary-color;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  &__contact-el {
+    margin-bottom: 8px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__icon {
+    width: 35px;
+    height: auto;
+    margin-right: 5px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

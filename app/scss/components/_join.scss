@@ -1,0 +1,22 @@
+.join {
+  &__section {
+    background-color: $accent-color;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__header {
+    margin: 0;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 0.95em;
+  }
+
+  &__button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
