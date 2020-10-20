@@ -46,7 +46,7 @@
     }
 
     &.is-warning {
-      border-color: $accent-color;
+      border-color: $accent-color-darker;
 
       @include screen-md-min {
         font-size: 1.6em;
