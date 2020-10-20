@@ -1,69 +1,79 @@
 .shopping {
   &__header {
-    margin-top: 43px;
+    margin-top: 0;
+  }
+
+  &__section {
+    display: flex;
+    padding-bottom: 50px;
 
     @include screen-sm-max {
-      margin-top: 0.67em;
+      flex-direction: column;
+      padding-bottom: 0px;
     }
   }
 
-  &__cards-image,
+  &__left-col {
+    width: 50%;
+    flex-basis: 50%;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include screen-sm-max {
+      width: 100%;
+      flex-basis: 100%;
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__right-col {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    line-height: 1.25em;
+
+    @include screen-md-max {
+      padding: 0;
+    }
+  }
+
   &__card-image {
     width: 100%;
     height: auto;
-  }
-
-  &__cards-image {
-    margin-bottom: 40px;
+    display: block;
+    align-self: center;
 
     @include screen-sm-max {
-      display: none;
+      padding: 0 20px;
+      margin-bottom: 50px;
     }
   }
 
-  &__card-image {
-    display: none;
+  &__coins-image {
+    max-width: 350px;
+    margin: 10px auto 30px;
+    display: block;
+
+    @include screen-md-max {
+      max-width: 300px;
+    }
+
     @include screen-sm-max {
-      display: block;
+      margin: 20px 0;
+      max-width: initial;
+      width: 100%;
+      height: auto;
+      padding: 0 20px;
     }
   }
 
   &__coins-abbr {
     display: block;
-    font-size: 0.7em;
+    font-size: 0.6em;
     margin-top: 23px;
-  }
-
-  &__coins-wrapper {
-    display: flex;
-    margin-bottom: 60px;
-
-    @include screen-sm-max {
-      flex-direction: column;
-    }
-  }
-
-  &__coins-image {
-    align-self: baseline;
-    max-width: 387px;
-
-    @include screen-sm-max {
-      max-width: initial;
-      width: 100%;
-      height: auto;
-      order: -1;
-    }
-  }
-
-  &__coins-text {
-    max-width: 450px;
-    margin-right: 10px;
-    margin-top: 0;
-    margin-left: 0;
-    font-size: 1.2em;
-
-    @include screen-sm-max {
-      max-width: initial;
-    }
+    line-height: 1.2em;
   }
 }

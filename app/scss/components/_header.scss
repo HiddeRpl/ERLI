@@ -1,23 +1,20 @@
 .header {
-  box-shadow: 1px 1px 25px -18px #000;
-  height: 75px;
+  height: 85px;
+  background-color: $white;
+  margin-bottom: 70px;
+
   @include screen-sm-max {
     box-shadow: none;
-    height: 100px;
+    height: 69px;
+    border-bottom: 1px solid #d6d6d6;
+    margin-bottom: 30px;
   }
 
   &__logo {
     max-height: 35px;
-    @include screen-sm-max {
-      display: none;
-    }
-  }
 
-  &__logo-small {
-    max-height: 70px;
-    display: none;
     @include screen-sm-max {
-      display: block;
+      max-height: 22px;
     }
   }
 
@@ -25,5 +22,13 @@
     display: flex;
     align-items: center;
     height: 100%;
+  }
+
+  &__link {
+    font-size: 0.75em;
+
+    @include screen-sm-max {
+      font-size: 0.65em;
+    }
   }
 }

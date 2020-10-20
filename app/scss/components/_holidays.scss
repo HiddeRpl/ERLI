@@ -11,10 +11,10 @@
     }
   }
 
-  &__texts {
+  &__left-col {
     width: 40%;
     flex-basis: 40%;
-    padding: 15px 50px 15px 20px;
+    padding: 15px 50px 15px 0;
 
     @include screen-sm-max {
       width: 100%;
@@ -43,27 +43,13 @@
     max-width: 130px;
   }
 
-  &__logo-with-text {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    @include screen-md-max {
-      flex-direction: column;
-    }
-
-    @include screen-sm-max {
-      flex-direction: row;
-    }
-  }
-
   &__text {
     font-size: 1.1em;
     line-height: 1.5em;
     margin-bottom: 0;
   }
 
-  &__logo-text {
+  &__text-big {
     color: $primary-color;
     font-size: 1.2em;
   }
