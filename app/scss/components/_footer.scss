@@ -1,15 +1,27 @@
 .footer {
   &__section {
-    padding-top: 30px;
     padding-bottom: 30px;
     display: flex;
     justify-content: space-between;
+
+    @include screen-sm-max {
+      padding-top: 10px;
+      display: block;
+      text-align: center;
+    }
   }
 
   &__contact-list {
     list-style-type: none;
     padding: 0;
     font-weight: 500;
+    margin: 0;
+    display: flex;
+
+    @include screen-sm-max {
+      display: block;
+      margin: 25px 0;
+    }
   }
 
   &__rules {
@@ -19,8 +31,22 @@
     line-height: 26px;
   }
 
+  &__left-col {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+
+    @include screen-sm-max {
+      display: block;
+    }
+  }
+
   &__right-col {
-    text-align: right;
+    display: none;
+
+    @include screen-sm-max {
+      display: block;
+    }
   }
 
   &__contact-link {
@@ -32,10 +58,18 @@
   }
 
   &__contact-el {
-    margin-bottom: 8px;
+    margin: 0 0 0 40px;
 
-    &:last-child {
-      margin-bottom: 0;
+    @include screen-sm-max {
+      margin: 0 0 10px 0;
+    }
+  }
+
+  &__social-icons {
+    margin: 0 0 0 auto;
+
+    @include screen-sm-max {
+      margin: 25px 0;
     }
   }
 

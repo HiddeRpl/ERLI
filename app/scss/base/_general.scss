@@ -4,7 +4,7 @@
 
 html {
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 300;
   scroll-behavior: smooth;
   background-color: #f4f4f4;
@@ -67,6 +67,10 @@ a:focus {
   &.is-fluid {
     max-width: initial;
   }
+
+  &.is-accent {
+    background-color: $accent-color;
+  }
 }
 
 .content-section {
@@ -80,12 +84,18 @@ a:focus {
 }
 
 .primary-button {
-  padding: 10px 27px;
+  padding: 15px 30px;
   background-image: linear-gradient(90deg, $primary-lighter-color, $primary-color);
   border: 0;
   color: $white;
   border-radius: 35px;
   font-size: 17px;
+  display: inline-block;
+  font-weight: 500;
+
+  &:hover {
+    color: $white;
+  }
 }
 
 .text-link {

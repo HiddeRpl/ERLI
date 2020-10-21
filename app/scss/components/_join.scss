@@ -1,9 +1,19 @@
 .join {
-  &__section {
+  &__section-wrapper {
     background-color: $accent-color;
-    text-align: center;
+  }
+
+  &__section {
     padding-top: 30px;
     padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include screen-sm-max {
+      flex-direction: column;
+      text-align: center;
+    }
   }
 
   &__header {
@@ -12,11 +22,26 @@
 
   &__text {
     margin: 0;
-    font-size: 0.95em;
+    font-size: 1.3em;
+    text-align: right;
+
+    @include screen-sm-max {
+      text-align: center;
+    }
   }
 
   &__button {
     margin-top: 20px;
-    margin-bottom: 20px;
+
+    @include screen-sm-max {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__break {
+    @include screen-sm-max {
+      display: none;
+    }
   }
 }
